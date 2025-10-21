@@ -1,61 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog</title>
-  <link rel="stylesheet" href="../css/styles.css" />
-</head>
+  <body class="p-8 bg-blue-50 text-slate-700">
+    <h1 class="text-3xl font-bold text-slate-800">My Blog</h1>
+    <div class="mt-6 grid grid-cols-3 gap-6 grid-flow-dense">
+      <!-- Blog Post 1 -->
+      <div
+        class="relative p-6 bg-white shadow-sm rounded-lg space-y-2 row-span-2 col-start-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="z-1 absolute top-3 left-3 size-8 fill-amber-400 drop-shadow-sm"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+            clip-rule="evenodd"
+          />
+        </svg>
 
-<body class="p-8 bg-blue-50 text-slate-700">
-  <h1 class="text-3xl font-bold text-slate-800">My Blog</h1>
-  <div class="mt-6">
-    <!-- Blog Post 1 -->
-    <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
-      <h2 class="text-xl font-semibold text-slate-800">How to Master Tailwind CSS</h2>
-      <p>Learn how to efficiently use Tailwind CSS to create stunning designs with minimal effort...</p>
-      <a href="#" class="text-blue-500 font-medium">Read more</a>
+        <h2 class="relative z-2 text-xl font-semibold text-slate-800">
+          How to Master Tailwind CSS
+        </h2>
+        <p>
+          Learn how to efficiently use Tailwind CSS to create stunning designs
+          with minimal effort...
+        </p>
+        <a href="#" class="text-blue-500 font-medium">Read more</a>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="p-6 bg-white shadow-sm rounded-lg space-y-2 col-span-full">
+        <h2 class="text-xl font-semibold text-slate-800">
+          Top Tips for Responsive Design
+        </h2>
+        <p>
+          Responsive design is crucial in modern web development. Discover
+          practical tips to improve your designs...
+        </p>
+        <a href="#" class="text-blue-500 font-medium">Read more</a>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
+        <h2 class="text-xl font-semibold text-slate-800">
+          Understanding Utility-First CSS
+        </h2>
+        <p>
+          Dive into the utility-first CSS approach and see how it can simplify
+          your workflow...
+        </p>
+        <a href="#" class="text-blue-500 font-medium">Read more</a>
+      </div>
+
+      <!-- Blog Post 4 -->
+      <div class="p-6 bg-white shadow-sm rounded-lg space-y-2 order-first">
+        <h2 class="text-xl font-semibold text-slate-800">
+          Beginner's Guide to Web Accessibility
+        </h2>
+        <p>Ensure your website is accessible to everyone with this guide...</p>
+        <a href="#" class="text-blue-500 font-medium">Read more</a>
+      </div>
+
+      <!-- Blog Post 5 -->
+      <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
+        <h2 class="text-xl font-semibold text-slate-800">
+          CSS Grid vs Flexbox
+        </h2>
+        <p>
+          When should you use CSS Grid or Flexbox? Learn the key differences and
+          best use cases...
+        </p>
+        <a href="#" class="text-blue-500 font-medium">Read more</a>
+      </div>
+
+      <!-- Blog Post 6 -->
+      <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
+        <h2 class="text-xl font-semibold text-slate-800">
+          10 Must-Know HTML Tips
+        </h2>
+        <p>
+          Boost your productivity with these 10 essential HTML tips for
+          developers...
+        </p>
+        <a href="#" class="text-blue-500 font-medium">Read more</a>
+      </div>
+
+      <a
+        href="#"
+        class="fixed bottom-8 right-8 text-sm bg-sky-400 text-white shadow-xl shadow-sky-200 rounded-full py-2 px-4"
+        >Follow Us On Facebook</a
+      >
     </div>
-
-    <!-- Blog Post 2 -->
-    <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
-      <h2 class="text-xl font-semibold text-slate-800">Top Tips for Responsive Design</h2>
-      <p>
-        Responsive design is crucial in modern web development. Discover practical tips to improve your
-        designs...
-      </p>
-      <a href="#" class="text-blue-500 font-medium">Read more</a>
-    </div>
-
-    <!-- Blog Post 3 -->
-    <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
-      <h2 class="text-xl font-semibold text-slate-800">Understanding Utility-First CSS</h2>
-      <p>Dive into the utility-first CSS approach and see how it can simplify your workflow...</p>
-      <a href="#" class="text-blue-500 font-medium">Read more</a>
-    </div>
-
-    <!-- Blog Post 4 -->
-    <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
-      <h2 class="text-xl font-semibold text-slate-800">Beginner's Guide to Web Accessibility</h2>
-      <p>Ensure your website is accessible to everyone with this guide...</p>
-      <a href="#" class="text-blue-500 font-medium">Read more</a>
-    </div>
-
-    <!-- Blog Post 5 -->
-    <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
-      <h2 class="text-xl font-semibold text-slate-800">CSS Grid vs Flexbox</h2>
-      <p>When should you use CSS Grid or Flexbox? Learn the key differences and best use cases...</p>
-      <a href="#" class="text-blue-500 font-medium">Read more</a>
-    </div>
-
-    <!-- Blog Post 6 -->
-    <div class="p-6 bg-white shadow-sm rounded-lg space-y-2">
-      <h2 class="text-xl font-semibold text-slate-800">10 Must-Know HTML Tips</h2>
-      <p>Boost your productivity with these 10 essential HTML tips for developers...</p>
-      <a href="#" class="text-blue-500 font-medium">Read more</a>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
