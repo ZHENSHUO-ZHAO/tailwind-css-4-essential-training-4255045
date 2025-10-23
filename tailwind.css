@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-
   --breakpoint-xs: 30rem;
 
   --font-cursive: "Pacifico", serif;
 
   --color-chocolate: #86563c;
   --color-chocolate-dark: #6c3f31;
+}
 
+@utility my-shadow {
+  text-shadow: 4px 4px 2px theme(colors.gray.300 / 0.9);
+}
 
+@utility card {
+  padding: 2rem;
+  border: solid 1px var(--color-stone-300);
+  border-radius: var(--radius-2xl);
+}
+
+.igStyleBtn {
+  @apply inline-block mt-4 px-5 py-3 bg-linear-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] rounded-xl text-white font-medium;
 }
